@@ -75,9 +75,8 @@
 		<jdbc:script location="classpath:/db/vault_oauth/mobile-app-client.sql"/>
 		<jdbc:script location="classpath:/db/vault_oauth/mono-application-client.sql"/>
 		<!--Tables needed by this webapp-->
-		<jdbc:script location="classpath:/db/clients.sql"/>
-		<jdbc:script location="classpath:/db/scopes.sql"/>
-		<jdbc:script location="classpath:/db/users.sql"/>
+		<jdbc:script location="classpath:/db/tables/mysql_database_tables.sql"/>
+		<!--<jdbc:script location="classpath:/db/users.sql"/>-->
 	</jdbc:initialize-database>
 
 	<!--  The following is for connecting to a PostgreSQL database that has been initialized with
